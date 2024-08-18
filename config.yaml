@@ -1,0 +1,619 @@
+points:
+  zones:
+    matrix:
+      columns:
+        outer.key.stagger: 1U
+        outer:
+          key:
+            stagger: 1U 
+            column_net: P104
+        pinky:
+          key:
+            stagger: 0.25U
+            column_net: P100
+        ring:
+          key:
+            stagger: 0
+            column_net: P024
+        middle:
+          key:
+            bind: [0,0,10,0]
+            stagger: 0.25U
+            column_net: P022
+        index:
+          key:
+            stagger: -0.25U
+            column_net: P020
+        inner:
+          key:
+            stagger: -0.15U
+            column_net: P017
+          rows:
+            bottom:
+              bind: [10,24.5,14.5,15]
+      rows:
+        bottom:
+          padding: U
+          row_net: P002
+        home:
+          padding: U
+          row_net: P029
+        top:
+          padding: U
+          row_net: P031
+    thumb:
+      anchor:
+        ref: matrix_index_bottom
+        shift: [-0.2U, -1.25U]
+        rotate: 0
+      columns: 
+        stim:
+          key.column_net: P022
+          key.name: thumb_stim
+          key.bind: [12,2,0,0]
+        tucky:
+          key.column_net: P020
+          key.name: thumb_tucky
+          key.spread: U
+          key.bind: [0,3,0,2]
+          key.origin: [-0.5U, -0.5U]
+          key.splay: -10
+        reachy:
+          key.column_net: P017
+          key.spread: U
+          key.splay: -15
+          key.bind: [0,0,0,3]
+          key.origin: [-0.5U, -0.5U]
+          key.name: thumb_reachy
+      rows:
+        cluster:
+          row_net: P113
+  mirror:
+    ref: matrix_inner_top
+    distance: 100
+
+
+
+outlines:
+  ref:
+    - what: rectangle
+      where: true
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+  left:
+    - what: rectangle
+      where: matrix_inner_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_inner_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_inner_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_index_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_index_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_index_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_middle_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_middle_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_middle_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_ring_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_ring_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_ring_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_pinky_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_pinky_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_pinky_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_outer_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_outer_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: matrix_outer_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: thumb_stim
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: thumb_tucky
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: thumb_reachy
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+  right:
+    - what: rectangle
+      where: mirror_matrix_inner_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_inner_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_inner_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_index_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_index_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_index_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_middle_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_middle_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_middle_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_ring_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_ring_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_ring_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_pinky_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_pinky_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_pinky_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_outer_top
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_outer_home
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_matrix_outer_bottom
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_thumb_stim
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_thumb_tucky
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+    - what: rectangle
+      where: mirror_thumb_reachy
+      bound: true
+      asym: left
+      size: [cx+3,cy+3]
+
+  firstleft:
+    - what: outline
+      name: left
+      fillet: 3
+  secondleft:
+    - what: outline
+      name: firstleft
+      fillet: 2
+  thirdleft:
+    - what: outline
+      name: secondleft
+      fillet: 1
+  panelleft:
+    - what: outline
+      name: thirdleft
+      fillet: .5
+
+  firstright:
+    - what: outline
+      name: right
+      fillet: 3
+  secondright:
+    - what: outline
+      name: firstright
+      fillet: 2
+  thirdright:
+    - what: outline
+      name: secondright
+      fillet: 1
+  panelright:
+    - what: outline
+      name: thirdright
+      fillet: .5
+
+
+pcbs:
+  left:
+    outlines:
+      main:
+        outline: panelleft
+    footprints:
+      thumb_1_hotswap:
+        what: choc
+        where: thumb_reachy
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      thumb_2_hotswap:
+        what: choc
+        where: thumb_tucky
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      thumb_3_hotswap:
+        what: choc
+        where: thumb_stim
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      choc_hotswap:
+        what: choc
+        where: /^matrix_.*/
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      thumb_1_diode:
+        what: diode
+        where: thumb_reachy
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      thumb_2_diode:
+        what: diode
+        where: thumb_tucky
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      thumb_3_diode:
+        what: diode
+        where: thumb_stim
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      diode:
+        what: diode
+        where: /^matrix_.*/
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      jstph:
+        what: jstph
+        where:
+          ref: matrix_middle_home
+          shift: [5, 10]
+          rotate: -90
+        params:
+            side: B
+            pos: pos
+            neg: GND
+      reset:
+        what: button
+        params:
+          side: B
+          from: GND
+          to: RST
+        where:
+          ref: matrix_inner_home
+          shift: [32, -12]
+          rotate: -90
+      battery_switch:
+        what: slider
+        where:
+          ref: matrix_inner_home
+          shift: [33, -24]
+          rotate: -90
+        params:
+            side: B
+            from: pos
+            to: RAW
+      trrs:
+        what: trrs
+        where:
+          ref: matrix_inner_home
+          shift: [25.5, -40]
+          rotate: -90   
+        params:
+          A: GND
+          B: GND
+          C: P010
+          D: VCC
+          reverse: true
+          symmetric: true
+
+      nice_nano:
+        what: nice_nano
+        where:
+          ref: matrix_inner_home
+          shift: [20, -18]
+          rotate: -90
+        params:
+          orientation: "down"
+
+      top_left_mounting_hole:
+        what: mountinghole
+        where:
+          ref: matrix_outer_top
+          shift: [9.5, -5]
+
+      bottom_left_mounting_hole:
+        what: mountinghole
+        where:
+          ref: matrix_outer_bottom
+          shift: [9.5, 9.5] 
+ 
+      top_right_mounting_hole:
+        what: mountinghole
+        where:
+          ref: matrix_index_top
+          shift: [9.5, -7] 
+      bottom_right_mounting_hole:
+        what: mountinghole
+        where:
+          ref: thumb_tucky
+          shift: [0, 12.5]
+  right:
+    outlines:
+      main:
+        outline: panelright
+    footprints:
+      thumb_1_hotswap:
+        what: choc
+        where: mirror_thumb_reachy
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      thumb_2_hotswap:
+        what: choc
+        where: mirror_thumb_tucky
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      thumb_3_hotswap:
+        what: choc
+        where: mirror_thumb_stim
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      choc_hotswap:
+        what: choc
+        where: /^mirror_matrix_.*/
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reverse: false
+          hotswap: true
+      thumb_1_diode:
+        what: diode
+        where: mirror_thumb_reachy
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      thumb_2_diode:
+        what: diode
+        where: mirror_thumb_tucky
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      thumb_3_diode:
+        what: diode
+        where: mirror_thumb_stim
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      diode:
+        what: diode
+        where: /^mirror_matrix_.*/
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      jstph:
+        what: jstph
+        where:
+          ref: mirror_matrix_middle_home
+          shift: [5, 10]
+          rotate: -90
+        params:
+            side: B
+            pos: pos
+            neg: GND
+      reset:
+        what: button
+        params:
+          side: B
+          from: GND
+          to: RST
+        where:
+          ref: mirror_matrix_inner_home
+          shift: [32, -12]
+          rotate: -90
+      battery_switch:
+        what: slider
+        where:
+          ref: mirror_matrix_inner_home
+          shift: [33, -24]
+          rotate: -90
+        params:
+            side: B
+            from: pos
+            to: RAW
+      trrs:
+        what: trrs
+        where:
+          ref: mirror_matrix_inner_home
+          shift: [25.5, -40]
+          rotate: -90   
+        params:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+          reverse: true
+          symmetric: true
+      nice_nano:
+        what: nice_nano
+        where:
+          ref: mirror_matrix_inner_home
+          shift: [20, -18]
+          rotate: 90
+        params:
+          orientation: "down"
+      top_left_mounting_hole:
+        what: mountinghole
+        where:
+          ref: mirror_matrix_outer_top
+          shift: [9.5, -5]
+
+      bottom_left_mounting_hole:
+        what: mountinghole
+        where:
+          ref: mirror_matrix_outer_bottom
+          shift: [9.5, 13] 
+ 
+      top_right_mounting_hole:
+        what: mountinghole
+        where:
+          ref: mirror_matrix_index_top
+          shift: [9.5, -7] 
+
+      bottom_right_mounting_hole:
+        what: mountinghole
+        where:
+          ref: mirror_thumb_tucky
+          shift: [0, 12.5] 
