@@ -24,7 +24,6 @@
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
                   &kp LGUI &mo 1 &kp ESC   &kp SPACE &mo 2 &kp RALT
                         >;
-                        >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
